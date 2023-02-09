@@ -7,7 +7,7 @@ import { z } from 'zod'
 
 if (process.env.NODE_ENV === 'test') {
   console.log('chegou')
-  config({ path: '.env.test' })
+  config({ path: '.env.test', override: true })
 } else {
   config()
 }
